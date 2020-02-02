@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sut:
+    build: .
+    command: bundle exec rake test
+    volumes:
+      - .:/asciibook
